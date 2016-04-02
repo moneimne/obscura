@@ -6,7 +6,7 @@ public class SunControl : MonoBehaviour {
     float sunSpeed;
     Times curr;
 
-    enum Times {tt, tr, rr, br, bb, bl, ll, tl};
+    enum Times {tt, tr, rr, br, bb, bl, ll, tl, up};
 
 	// Use this for initialization
 	void Start () {
@@ -25,28 +25,35 @@ public class SunControl : MonoBehaviour {
             transform.Rotate(Vector3.up, sunSpeed, Space.World);
         }
 
-        if (Input.GetKeyDown(KeyCode.A)) {
+        Vector3 stickPos = new Vector3(Input.GetAxis("LeftStickHorizontal"), 0, Input.GetAxis("LeftStickVertical"));
+
+        if (Input.GetButtonDown("LeftStickTrigger")) {
+            Debug.Log("hey");
+        }
+
+        Debug.Log(stickPos + " ... " + Input.GetButtonDown("LeftStickTrigger"));
+        if (stickPos.x == 0 && stickPos.z == 1) {
             curr = Times.tt;
         }
-        else if (Input.GetKeyDown(KeyCode.S)) {
+        else if (stickPos.x == 1 && stickPos.z == 1) {
             curr = Times.tr;
         }
-        else if (Input.GetKeyDown(KeyCode.D)) {
+        else if (stickPos.x == 1 && stickPos.z == 0) {
             curr = Times.rr;
         }
-        else if (Input.GetKeyDown(KeyCode.F)) {
+        else if (stickPos.x == 1 && stickPos.z == -1) {
             curr = Times.br;
         }
-        else if (Input.GetKeyDown(KeyCode.G)) {
+        else if (stickPos.x == 0 && stickPos.z == -1) {
             curr = Times.bb;
         }
-        else if (Input.GetKeyDown(KeyCode.H)) {
+        else if (stickPos.x == -1 && stickPos.z == -1) {
             curr = Times.bl;
         }
-        else if (Input.GetKeyDown(KeyCode.J)) {
+        else if (stickPos.x == -1 && stickPos.z == 0) {
             curr = Times.ll;
         }
-        else if (Input.GetKeyDown(KeyCode.K)) {
+        else if (stickPos.x == -1 && stickPos.z == 1) {
             curr = Times.tl;
         }
     }
