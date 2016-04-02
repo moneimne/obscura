@@ -17,7 +17,7 @@ public class PlayerMovementScript : MonoBehaviour {
         if (movement.sqrMagnitude > 0.5f)
         {
             movement.Normalize();
-            rb.MovePosition(transform.position + movement * Time.deltaTime * Speed);
+            rb.MovePosition(transform.position + transform.TransformVector(movement) * Time.deltaTime * Speed);
         }
 	}
 }

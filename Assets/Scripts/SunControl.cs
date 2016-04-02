@@ -27,11 +27,12 @@ public class SunControl : MonoBehaviour {
 
         Vector3 stickPos = new Vector3(Input.GetAxis("LeftStickHorizontal"), 0, Input.GetAxis("LeftStickVertical"));
 
-        if (Input.GetButtonDown("LeftStickTrigger")) {
-            Debug.Log("hey");
-        }
+        //if (Input.GetButtonDown("LeftStickTrigger"))
+        //{
+        //    Debug.Log("hey");
+        //}
 
-        Debug.Log(stickPos + " ... " + Input.GetButtonDown("LeftStickTrigger"));
+        //Debug.Log(stickPos + " ... " + Input.GetButtonDown("LeftStickTrigger"));
         if (stickPos.x == 0 && stickPos.z == 1) {
             curr = Times.tt;
         }
