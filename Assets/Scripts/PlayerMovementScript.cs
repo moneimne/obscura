@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerMovementScript : MonoBehaviour {
     private Rigidbody rb;
     public float Speed;
+    public int finalBuildingState = 1;
 
 	// Use this for initialization
 	void Start () {
