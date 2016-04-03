@@ -100,7 +100,7 @@ public class SunControl : MonoBehaviour {
         }
 
         if (Mathf.Abs(transform.rotation.eulerAngles.x - 50.0f) > 0.5f && curr != Times.up) {
-            if (topReset) {
+            if (topReset && Mathf.Abs(transform.rotation.eulerAngles.x - 90.0f) < 0.3) {
                 topReset = false;
                 float dist = Mathf.Abs(transform.rotation.eulerAngles.y - ((float)curr * 45.0f));
                 if (transform.rotation.eulerAngles.y > ((float)curr * 45.0f)) {
