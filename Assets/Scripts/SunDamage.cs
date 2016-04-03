@@ -5,6 +5,7 @@ public class SunDamage : MonoBehaviour {
 	private GameObject sceneLight;
     private int layerMask = ~(1 << 8);
     public Material damageMat;
+    public int currentSpawn = 1;
 
 	// Use this for initialization
 	void Start () {
@@ -29,5 +30,19 @@ public class SunDamage : MonoBehaviour {
         Color newColor = damageMat.GetColor("_Color");
         newColor.a = Mathf.Clamp(newColor.a + delta, 0, 0.9f);
         damageMat.SetColor("_Color", newColor);
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.tag.Equals("Respawn"))
+        {
+            switch (col.gameObject.name)
+            {
+                case "Spawn_2":
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }
