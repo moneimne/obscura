@@ -132,6 +132,10 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 2.677242
       objectReference: {fileID: 0}
+    - target: {fileID: 6400002, guid: 03fddea4c6f074428a19938a3b27e3d7, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03fddea4c6f074428a19938a3b27e3d7, type: 3}
   m_IsPrefabParent: 0
@@ -195,7 +199,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
 --- !u!1 &361788144
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,7 +516,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
 --- !u!1001 &948646816
 Prefab:
   m_ObjectHideFlags: 0
@@ -739,7 +743,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
 --- !u!1001 &1088790813
 Prefab:
   m_ObjectHideFlags: 0
@@ -1508,6 +1512,10 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 2.677242
       objectReference: {fileID: 0}
+    - target: {fileID: 6400002, guid: 03fddea4c6f074428a19938a3b27e3d7, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03fddea4c6f074428a19938a3b27e3d7, type: 3}
   m_IsPrefabParent: 0
@@ -1662,6 +1670,10 @@ Prefab:
       propertyPath: m_Name
       value: second_building
       objectReference: {fileID: 0}
+    - target: {fileID: 6400002, guid: 03fddea4c6f074428a19938a3b27e3d7, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03fddea4c6f074428a19938a3b27e3d7, type: 3}
   m_IsPrefabParent: 0
@@ -1773,6 +1785,10 @@ Prefab:
     - target: {fileID: 400016, guid: 03fddea4c6f074428a19938a3b27e3d7, type: 3}
       propertyPath: m_LocalScale.x
       value: 4.213645
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400002, guid: 03fddea4c6f074428a19938a3b27e3d7, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03fddea4c6f074428a19938a3b27e3d7, type: 3}
