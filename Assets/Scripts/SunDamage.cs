@@ -29,6 +29,10 @@ public class SunDamage : MonoBehaviour {
     {
         Color newColor = damageMat.GetColor("_Color");
         newColor.a = Mathf.Clamp(newColor.a + delta, 0, 0.9f);
+        if (newColor.a > 0.89f)
+        {
+            respawn();
+        }
         damageMat.SetColor("_Color", newColor);
     }
 
@@ -36,13 +40,20 @@ public class SunDamage : MonoBehaviour {
     {
         if (col.gameObject.tag.Equals("Respawn"))
         {
-            switch (col.gameObject.name)
-            {
-                case "Spawn_2":
-                    break;
-                default:
-                    break;
-            }
+            currentSpawn = Mathf.Max(int.Parse(col.gameObject.name.Substring(6)), currentSpawn);
+        }
+    }
+
+    void respawn()
+    {
+        transform.position = GameObject.Find("Spawn_" + currentSpawn).transform.position;
+        if (currentSpawn < 3)
+        {
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
+        else
+        {
+            transform.rotation = Quaternion.Euler(0, 270, 0);
         }
     }
 }
