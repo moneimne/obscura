@@ -13,14 +13,10 @@ public class SunDamage : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetButton("RightButton"))
-        {
-            Debug.Log("HI");
-        }
         //Apply damage to player
         if (!(Physics.Raycast(transform.position, -1.0f * sceneLight.transform.forward, Mathf.Infinity, layerMask)))
         {
-            addDamageAlpha(0.005f);
+            addDamageAlpha(0.01f);
         }
         else
         {

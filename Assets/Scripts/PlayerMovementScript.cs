@@ -13,11 +13,14 @@ public class PlayerMovementScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         // Movement controls
-        Vector3 movement = new Vector3(Input.GetAxis("LeftStickHorizontal"), 0, Input.GetAxis("LeftStickVertical"));
-        if (movement.sqrMagnitude > 0.5f)
+        if (!Input.GetButton("RightButton"))
         {
-            movement.Normalize();
-            rb.MovePosition(transform.position + transform.TransformVector(movement) * Time.deltaTime * Speed);
+            Vector3 movement = new Vector3(Input.GetAxis("LeftStickHorizontal"), 0, Input.GetAxis("LeftStickVertical"));
+            if (movement.sqrMagnitude > 0.5f)
+            {
+                movement.Normalize();
+                rb.MovePosition(transform.position + transform.TransformVector(movement) * Time.deltaTime * Speed);
+            }
         }
 	}
 }

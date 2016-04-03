@@ -24,7 +24,17 @@ public class SunControl : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (Mathf.Abs(transform.rotation.eulerAngles.y - ((float) curr * 45.0f)) > 0.1f && curr != Times.up) {
-            transform.Rotate(Vector3.up, sunSpeed, Space.World);
+            float currentAngle = transform.rotation.eulerAngles.y;
+            float targetAngle = (float)curr * 45.0f;
+            float angleBetween = ((targetAngle - currentAngle) + 180.0f) % 360.0f - 180.0f;
+            if (angleBetween > 0)
+            {
+                transform.Rotate(Vector3.up, sunSpeed, Space.World);
+            }
+            else
+            {
+                transform.Rotate(Vector3.up, -1 * sunSpeed, Space.World);
+            }
         }
 
         if (Mathf.Abs(transform.rotation.eulerAngles.x - 50.0f) > 0.5f && curr != Times.up) {
