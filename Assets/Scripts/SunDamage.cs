@@ -5,26 +5,32 @@ public class SunDamage : MonoBehaviour {
 	private Rigidbody rb;
 	private GameObject light;
     private int layerMask = ~(1 << 8);
+    private GUITexture damage;
 
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody>();
 		light = GameObject.Find ("Directional Light");
-	}
+        damage = transform.Find("Damage").GetComponent<GUITexture>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        Vector3 fwd = transform.TransformDirection(Vector3.forward);
-        RaycastHit hit;
+        //Apply damage to player
         if (!(Physics.Raycast(transform.position, -1.0f * light.transform.forward, Mathf.Infinity, layerMask)))
-        //if (Physics.Raycast(transform.position, fwd, Mathf.Infinity, layerMask))
         {
-            // Apply damage to player.
-            Debug.Log("OUCH");
+            addDamageAlpha(0.005f);
         }
         else
         {
-            Debug.Log("NOT OUCH");
+            addDamageAlpha(-0.02f);
         }
 	}
+
+    void addDamageAlpha(float delta)
+    {
+        Color newColor = damage.color;
+        newColor.a = Mathf.Clamp(newColor.a + delta, 0, 0.6f);
+        damage.color = newColor;
+    }
 }
