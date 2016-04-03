@@ -27,12 +27,12 @@ public class SunControl : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (timer > 0.05f) {
+        //if (timer > 0.05f) {
             // Check for sun control input.
             if (Input.GetButton("RightButton")) {
                 //Debug.Log("HORIZ: " + Input.GetAxis("LeftStickHorizontal") + ", VERT: " + Input.GetAxis("LeftStickVertical"));
                 Vector3 stickPos = new Vector3(Input.GetAxis("LeftStickHorizontal"), 0, Input.GetAxis("LeftStickVertical"));
-                Debug.Log(stickPos);
+                //Debug.Log(stickPos);
                 if (Input.GetButtonDown("LeftStickTrigger")) {
                     topReset = true;
                     curr = Times.up;
@@ -79,11 +79,11 @@ public class SunControl : MonoBehaviour {
                     //Debug.Log("curr: " + curr + ", posY: " + player.transform.rotation.eulerAngles.y + ", temp: " + temp + ", octant: " + octant);
                 }
             }
-            timer = 0.0f;
-        }
-        else {
-            timer += Time.deltaTime;
-        }
+        //    timer = 0.0f;
+        //}
+        //else {
+        //    timer += Time.deltaTime;
+        //}
         if (Mathf.Abs(transform.rotation.eulerAngles.y - ((((float)curr * 45.0f) + 180.0f) % 360.0f)) > 0.1f && curr != Times.up) {
             //float currentAngle = transform.rotation.eulerAngles.y;
             //float targetAngle = (float)curr * 45.0f;
