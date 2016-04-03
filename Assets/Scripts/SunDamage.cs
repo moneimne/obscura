@@ -2,22 +2,23 @@
 using System.Collections;
 
 public class SunDamage : MonoBehaviour {
-	private Rigidbody rb;
-	private GameObject light;
+	private GameObject sceneLight;
     private int layerMask = ~(1 << 8);
-    private GUITexture damage;
+    public Material damageMat;
 
 	// Use this for initialization
 	void Start () {
-		rb = GetComponent<Rigidbody>();
-		light = GameObject.Find ("Directional Light");
-        damage = transform.Find("Damage").GetComponent<GUITexture>();
+        sceneLight = GameObject.Find("Directional Light");
     }
 	
 	// Update is called once per frame
 	void Update () {
+        if (Input.GetButton("RightButton"))
+        {
+            Debug.Log("HI");
+        }
         //Apply damage to player
-        if (!(Physics.Raycast(transform.position, -1.0f * light.transform.forward, Mathf.Infinity, layerMask)))
+        if (!(Physics.Raycast(transform.position, -1.0f * sceneLight.transform.forward, Mathf.Infinity, layerMask)))
         {
             addDamageAlpha(0.005f);
         }
@@ -29,8 +30,8 @@ public class SunDamage : MonoBehaviour {
 
     void addDamageAlpha(float delta)
     {
-        Color newColor = damage.color;
-        newColor.a = Mathf.Clamp(newColor.a + delta, 0, 0.6f);
-        damage.color = newColor;
+        Color newColor = damageMat.GetColor("_Color");
+        newColor.a = Mathf.Clamp(newColor.a + delta, 0, 0.9f);
+        damageMat.SetColor("_Color", newColor);
     }
 }
