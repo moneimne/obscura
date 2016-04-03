@@ -1461,6 +1461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5de77ad092cab3a46a26bfeff10cbf0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  curr: 0
 --- !u!95 &1202167630
 Animator:
   serializedVersion: 3
@@ -2667,3 +2668,18 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03fddea4c6f074428a19938a3b27e3d7, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &2096604931 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100082, guid: dbda4276f95fc42af8be0fcc32ac867a, type: 3}
+  m_PrefabInternal: {fileID: 1328758360}
+--- !u!114 &2096604934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2096604931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519d5c8507e0b4fef9d38860ec00407c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
