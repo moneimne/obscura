@@ -27,7 +27,6 @@ public class SunControl : MonoBehaviour {
             transform.Rotate(Vector3.up, sunSpeed, Space.World);
         }
 
-<<<<<<< HEAD
         if (Mathf.Abs(transform.rotation.eulerAngles.x - 50.0f) > 0.5f && curr != Times.up) {
             if (topReset) {
                 topReset = false;
@@ -42,33 +41,6 @@ public class SunControl : MonoBehaviour {
 
         if (curr == Times.up && Mathf.Abs(transform.rotation.eulerAngles.x - 90.0f) > 0.2f) {
             transform.Rotate(Vector3.right, sunSpeed);
-=======
-        Vector3 stickPos = new Vector3(Input.GetAxis("LeftStickHorizontal"), 0, Input.GetAxis("LeftStickVertical"));
-
-        //if (Input.GetButtonDown("LeftStickTrigger"))
-        //{
-        //    Debug.Log("hey");
-        //}
-
-        //Debug.Log(stickPos + " ... " + Input.GetButtonDown("LeftStickTrigger"));
-        if (stickPos.x == 0 && stickPos.z == 1) {
-            curr = Times.tt;
-        }
-        else if (stickPos.x == 1 && stickPos.z == 1) {
-            curr = Times.tr;
-        }
-        else if (stickPos.x == 1 && stickPos.z == 0) {
-            curr = Times.rr;
-        }
-        else if (stickPos.x == 1 && stickPos.z == -1) {
-            curr = Times.br;
-        }
-        else if (stickPos.x == 0 && stickPos.z == -1) {
-            curr = Times.bb;
-        }
-        else if (stickPos.x == -1 && stickPos.z == -1) {
-            curr = Times.bl;
->>>>>>> bb870209d57d588ea0720e511f5873f43f9c11cf
         }
 
         if (Input.GetButton("RightButton")) {

@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &112794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 422112}
+  - 131: {fileID: 13176912}
+  m_Layer: 8
+  m_Name: Damage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &120714
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,6 +27,7 @@ GameObject:
   - 114: {fileID: 11455936}
   - 54: {fileID: 5468666}
   - 136: {fileID: 13640306}
+  - 114: {fileID: 11450688}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -44,13 +61,26 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 120714}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.7038484, z: 0, w: 0.7103503}
+  m_LocalPosition: {x: -0.41405624, y: 0, z: -23.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 484426}
+  - {fileID: 422112}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!4 &422112
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112794}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0.9125}
+  m_LocalScale: {x: 1.1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 420672}
+  m_RootOrder: 1
 --- !u!4 &484426
 Transform:
   m_ObjectHideFlags: 1
@@ -138,6 +168,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   angular_speed: 1
+--- !u!114 &11450688
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daa5a9011918a437a8d081ddfdac4ca9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11455936
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -157,6 +198,25 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 172334}
   m_Enabled: 1
+--- !u!131 &13176912
+GUITexture:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112794}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: ae9c9301c80cd7d4a992b17db038915f, type: 3}
+  m_Color: {r: 0.6911765, g: 0.06606832, b: 0.06606832, a: 0.453}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!136 &13640306
 CapsuleCollider:
   m_ObjectHideFlags: 1
