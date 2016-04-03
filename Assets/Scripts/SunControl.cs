@@ -11,11 +11,11 @@ public class SunControl : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        rotateX = 50.0f;
+        rotateX = 90.0f;
         rotateY = 0.0f;
         rotateZ = 0.0f;
         sunSpeed = 0.2f;
-        curr = Times.tt;
+        curr = Times.up;
         transform.position = Vector3.zero;
         transform.rotation = Quaternion.Euler(rotateX, rotateY, rotateZ);
         topReset = false;
