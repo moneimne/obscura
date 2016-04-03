@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: dbda4276f95fc42af8be0fcc32ac867a
+timeCreated: 1459636481
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Char_A_1
+    100002: Char_a_1
+    100004: Char_A_2
+    100006: Char_a_2
+    100008: Char_A_3
+    100010: Char_B_1
+    100012: Char_B_2
+    100014: Char_B_3
+    100016: Char_C_1
+    100018: Char_C_2
+    100020: Char_C_3
+    100022: Char_M_1
+    100024: Char_O_1
+    100026: Char_O_2
+    100028: Char_O_3
+    100030: Char_R_1
+    100032: Char_R_2
+    100034: Char_R_3
+    100036: Char_S_1
+    100038: Char_S_2
+    100040: Char_S_3
+    100042: Char_U_1
+    100044: Char_U_2
+    100046: Char_U_3
+    100048: Char_y_1
+    100050: curve1
+    100052: curve10
+    100054: curve11
+    100056: curve12
+    100058: curve2
+    100060: curve3
+    100062: curve4
+    100064: curve5
+    100066: curve6
+    100068: curve7
+    100070: curve8
+    100072: curve9
+    100074: Text_Maya_1
+    100076: Text_OBSCURA_1
+    100078: Text_OBSCURA_2
+    100080: Text_OBSCURA_3
+    100082: //RootNode
+    100084: Trim_Char_A_3_1
+    100086: Trim_Char_B_3_1
+    100088: Trim_Char_C_3_1
+    100090: Trim_Char_O_3_1
+    100092: Trim_Char_R_3_1
+    100094: Trim_Char_S_3_1
+    100096: Trim_Char_U_3_1
+    100098: Trim_Text_OBSCURA_1_1
+    100100: Trim_Text_OBSCURA_2_1
+    100102: Trim_Text_OBSCURA_3_1
+    400000: Char_A_1
+    400002: Char_a_1
+    400004: Char_A_2
+    400006: Char_a_2
+    400008: Char_A_3
+    400010: Char_B_1
+    400012: Char_B_2
+    400014: Char_B_3
+    400016: Char_C_1
+    400018: Char_C_2
+    400020: Char_C_3
+    400022: Char_M_1
+    400024: Char_O_1
+    400026: Char_O_2
+    400028: Char_O_3
+    400030: Char_R_1
+    400032: Char_R_2
+    400034: Char_R_3
+    400036: Char_S_1
+    400038: Char_S_2
+    400040: Char_S_3
+    400042: Char_U_1
+    400044: Char_U_2
+    400046: Char_U_3
+    400048: Char_y_1
+    400050: curve1
+    400052: curve10
+    400054: curve11
+    400056: curve12
+    400058: curve2
+    400060: curve3
+    400062: curve4
+    400064: curve5
+    400066: curve6
+    400068: curve7
+    400070: curve8
+    400072: curve9
+    400074: Text_Maya_1
+    400076: Text_OBSCURA_1
+    400078: Text_OBSCURA_2
+    400080: Text_OBSCURA_3
+    400082: //RootNode
+    400084: Trim_Char_A_3_1
+    400086: Trim_Char_B_3_1
+    400088: Trim_Char_C_3_1
+    400090: Trim_Char_O_3_1
+    400092: Trim_Char_R_3_1
+    400094: Trim_Char_S_3_1
+    400096: Trim_Char_U_3_1
+    400098: Trim_Text_OBSCURA_1_1
+    400100: Trim_Text_OBSCURA_2_1
+    400102: Trim_Text_OBSCURA_3_1
+    2300000: Trim_Char_A_3_1
+    2300002: Trim_Char_B_3_1
+    2300004: Trim_Char_C_3_1
+    2300006: Trim_Char_O_3_1
+    2300008: Trim_Char_R_3_1
+    2300010: Trim_Char_S_3_1
+    2300012: Trim_Char_U_3_1
+    3300000: Trim_Char_A_3_1
+    3300002: Trim_Char_B_3_1
+    3300004: Trim_Char_C_3_1
+    3300006: Trim_Char_O_3_1
+    3300008: Trim_Char_R_3_1
+    3300010: Trim_Char_S_3_1
+    3300012: Trim_Char_U_3_1
+    4300000: Trim_Char_O_3_1
+    4300002: Trim_Char_B_3_1
+    4300004: Trim_Char_S_3_1
+    4300006: Trim_Char_C_3_1
+    4300008: Trim_Char_U_3_1
+    4300010: Trim_Char_R_3_1
+    4300012: Trim_Char_A_3_1
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
