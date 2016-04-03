@@ -75,6 +75,7 @@ InputManager:
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: joystick button 8
+<<<<<<< HEAD
     altNegativeButton: 
     altPositiveButton: 
     gravity: 3
@@ -91,6 +92,8 @@ InputManager:
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: joystick button 5
+=======
+>>>>>>> bb870209d57d588ea0720e511f5873f43f9c11cf
     altNegativeButton: 
     altPositiveButton: 
     gravity: 3
@@ -99,5 +102,5 @@ InputManager:
     snap: 0
     invert: 0
     type: 0
-    axis: 9
+    axis: 0
     joyNum: 0

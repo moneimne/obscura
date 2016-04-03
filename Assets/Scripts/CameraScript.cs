@@ -14,6 +14,6 @@ public class CameraScript : MonoBehaviour {
 	void Update () {
         // Camera controls
         transform.Rotate(transform.right * Input.GetAxis("RightStickVertical") * angular_speed, Space.World);
-        transform.Rotate(Vector3.up * Input.GetAxis("RightStickHorizontal") * angular_speed * 1.3f, Space.World);
+        transform.parent.transform.Rotate(Vector3.up * Input.GetAxis("RightStickHorizontal") * angular_speed * 1.3f, Space.World);
 	}
 }
