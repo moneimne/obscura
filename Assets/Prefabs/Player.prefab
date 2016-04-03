@@ -674,7 +674,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 467332}
   - 33: {fileID: 3301154}
-  - 64: {fileID: 6473504}
   - 23: {fileID: 2355778}
   m_Layer: 8
   m_Name: Damage
@@ -993,8 +992,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 120714}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
-  m_LocalPosition: {x: -3.04, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: -0.97952986, z: 0, w: 0.2012991}
+  m_LocalPosition: {x: 7.7, y: 0, z: 2.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 484426}
@@ -2808,20 +2807,8 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
---- !u!64 &6473504
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 166524}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!81 &8127030
 AudioListener:
   m_ObjectHideFlags: 1
@@ -2864,7 +2851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 779012c435a71c149abf938a4c31bf92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angular_speed: 1
+  angular_speed: 1.5
 --- !u!114 &11450688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2876,7 +2863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daa5a9011918a437a8d081ddfdac4ca9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageMat: {fileID: 0}
+  damageMat: {fileID: 2100000, guid: bd2b5bcd54a3e254791191b12af211fe, type: 2}
 --- !u!114 &11455936
 MonoBehaviour:
   m_ObjectHideFlags: 1
