@@ -18,7 +18,7 @@ public class PlayerMovementScript : MonoBehaviour {
             if (movement.sqrMagnitude > 0.5f) {
                 movement.Normalize();
                 if (Input.GetAxis("Run") > 0) {
-                    movement *= 10.0f;
+                    movement *= 4.0f;
                 }
                 rb.MovePosition(transform.position + transform.TransformVector(movement) * Time.deltaTime * Speed);
             }

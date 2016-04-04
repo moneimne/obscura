@@ -10,7 +10,7 @@ public class TitleScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (GameObject.Find ("Directional Light").transform.eulerAngles.x < 23.0f) {
+		if (GameObject.Find ("Title Light").transform.eulerAngles.x < 23.0f) {
 			Application.LoadLevel ("SunTesting");
 		}
 	}
